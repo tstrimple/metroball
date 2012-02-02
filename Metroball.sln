@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metroball", "Metroball\Metroball\Metroball.csproj", "{DBB8CDA4-428F-482A-94C7-7072F43813DC}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "MetroballContent", "Metroball\MetroballContent\MetroballContent.contentproj", "{D0283376-D62B-4EF1-BEB6-6C8F138FDB96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metroball.Lib", "Metroball.Lib\Metroball.Lib.csproj", "{D99636BF-7EEC-46D4-A547-EE77CB7AA471}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBB8CDA4-428F-482A-94C7-7072F43813DC}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{DBB8CDA4-428F-482A-94C7-7072F43813DC}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{DBB8CDA4-428F-482A-94C7-7072F43813DC}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{DBB8CDA4-428F-482A-94C7-7072F43813DC}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{DBB8CDA4-428F-482A-94C7-7072F43813DC}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{DBB8CDA4-428F-482A-94C7-7072F43813DC}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{D0283376-D62B-4EF1-BEB6-6C8F138FDB96}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{D0283376-D62B-4EF1-BEB6-6C8F138FDB96}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{D99636BF-7EEC-46D4-A547-EE77CB7AA471}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{D99636BF-7EEC-46D4-A547-EE77CB7AA471}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{D99636BF-7EEC-46D4-A547-EE77CB7AA471}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{D99636BF-7EEC-46D4-A547-EE77CB7AA471}.Release|Windows Phone.Build.0 = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
