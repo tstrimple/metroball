@@ -1,0 +1,6 @@
+C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metroball.Lib\bin\Windows Phone\Debug\Metroball.Lib.dll
+C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metroball.Lib\bin\Windows Phone\Debug\Metroball.Lib.pdb
+C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metroball.Lib\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metroball.Lib\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metroball.Lib\obj\Windows Phone\Debug\Metroball.Lib.dll
+C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metroball.Lib\obj\Windows Phone\Debug\Metroball.Lib.pdb
