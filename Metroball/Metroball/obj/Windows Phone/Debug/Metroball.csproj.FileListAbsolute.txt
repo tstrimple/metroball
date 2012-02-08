@@ -14,9 +14,9 @@ C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metrob
 bin\Windows Phone\Debug\
 C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Metroball.xap
 C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Debug\XapCacheFile.xml
-C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Metroball.xap
-C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Debug\XapCacheFile.xml
-C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\AppManifest.xaml
-C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Debug\WMAppManifest.xml.g
-C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Debug\WMAppManifest.xml
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Metroball.xap
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Debug\XapCacheFile.xml
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\AppManifest.xaml
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Debug\WMAppManifest.xml.g
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Debug\WMAppManifest.xml
 bin\Windows Phone\Debug\
