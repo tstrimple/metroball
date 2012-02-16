@@ -1,2 +1,8 @@
 Content\LogoFont.xnb
 Content\MenuFont.xnb
+Content\Wall.xnb
+Content\Paddle.xnb
+Content\Miss.xnb
+Content\Sphere.xnb
+Content\Cube.xnb
+Content\GameFont.xnb

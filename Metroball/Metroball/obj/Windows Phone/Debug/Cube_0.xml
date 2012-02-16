@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Graphics="Microsoft.Xna.Framework.Content.Pipeline.Graphics" xmlns:Framework="Microsoft.Xna.Framework">
+  <Asset Type="Graphics:MeshContent">
+    <Name>Cube</Name>
+    <Identity>
+      <SourceFilename>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\MetroballContent\Cube.fbx</SourceFilename>
+      <SourceTool>FbxImporter</SourceTool>
+    </Identity>
+    <Transform>1 0 0 0 0 0 -1 0 0 1 0 0 -3.67148113 1.41146624 6.572603 1</Transform>
+    <Positions>1 1 -1 1 -1 -1 -1 -1 -1 -1 1 -1 1 0.999999 1 0.999999 -1.000001 1 -1 -1 1 -1 1 1</Positions>
+    <Geometry>
+      <Batch>
+        <Indices>2 1 0 0 3 2 6 5 4 4 7 6 7 4 0 0 1 7 6 7 1 1 2 6 5 6 2 2 3 5 3 0 4 4 5 3</Indices>
+        <Vertices>
+          <PositionIndices>0 1 2 3 4 7 6 5</PositionIndices>
+          <Channels>
+            <VertexChannel Name="Normal0" ElementType="Framework:Vector3">0.5773492 0.5773492 -0.5773492 0.5773492 -0.5773492 -0.5773492 -0.5773492 -0.5773492 -0.5773492 -0.5773492 0.5773492 -0.5773492 0.5773492 0.5773492 0.5773492 -0.5773492 0.5773492 0.5773492 -0.5773492 -0.5773492 0.5773492 0.5773492 -0.5773492 0.5773492</VertexChannel>
+          </Channels>
+        </Vertices>
+      </Batch>
+    </Geometry>
+  </Asset>
+</XnaContent>

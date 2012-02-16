@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using Metroball.Lib;
 using Metroball.Lib.GameState;
@@ -19,15 +20,24 @@ namespace Metroball
         private readonly GameStateEngine _gameStateEngine;
         private readonly GraphicsDeviceManager _graphicsDeviceManager;
         private BasicEffect _primaryEffect;
+        private bool _exiting;
+        private string _sessionStarted;
 
         public Game()
         {
+            _exiting = false;
             _graphicsDeviceManager = new GraphicsDeviceManager(this);
+            _graphicsDeviceManager.IsFullScreen = true;
             _gameStateEngine = new GameStateEngine(this);
+            _sessionStarted = DateTime.UtcNow.ToUnixTime().ToString(CultureInfo.InvariantCulture);
+
+            Service.SecretKey = _gameStateEngine.AppId;
+            Service.SessionStarted(_gameStateEngine.UserId, _gameStateEngine.SessionId, _sessionStarted);
+
             Content.RootDirectory = "Content";
 
             TargetElapsedTime = TimeSpan.FromTicks(333333);
-            InactiveSleepTime = TimeSpan.FromSeconds(1);
+            InactiveSleepTime = TimeSpan.FromSeconds(300);
         }
 
         protected override void Initialize()
@@ -61,22 +71,61 @@ namespace Metroball
 
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
+            if(Guide.IsVisible || !IsActive)
             {
-                if(_gameStateEngine.ExitState())
-                {
-                    Exit();   
-                }
+                base.Update(gameTime);
+                return;
             }
 
-            _gameStateEngine.Update(gameTime);
-            base.Update(gameTime);
+            if (_exiting)
+            {
+                return;
+            }
+
+            try
+            {
+                if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
+                {
+                    if (_gameStateEngine.ExitState())
+                    {
+                        _exiting = true;
+                        Service.SessionEnded(_gameStateEngine.UserId, _gameStateEngine.SessionId, _sessionStarted,  DateTime.UtcNow.ToUnixTime().ToString(CultureInfo.InvariantCulture), SessionEndedComplete);
+                        return;
+                    }
+                }
+
+                _gameStateEngine.Update(gameTime);
+                base.Update(gameTime);
+            }
+            catch (Exception ex)
+            {
+                Service.LogError(_gameStateEngine.UserId, _gameStateEngine.SessionId, ex.Message);
+                throw;
+            }
+        }
+
+        private void SessionEndedComplete(object sender, EventArgs eventArgs)
+        {
+            Exit();
         }
 
         protected override void Draw(GameTime gameTime)
         {
-            _gameStateEngine.Draw(gameTime);
-            base.Draw(gameTime);
+            if(_exiting)
+            {
+                return;
+            }
+
+            try
+            {
+                _gameStateEngine.Draw(gameTime);
+                base.Draw(gameTime);
+            }
+            catch (Exception ex)
+            {
+                Service.LogError(_gameStateEngine.UserId, _gameStateEngine.SessionId, ex.Message);
+                throw;
+            }
         }
     }
 }

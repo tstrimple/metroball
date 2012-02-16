@@ -1,4 +1,5 @@
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input.Touch;
 
 namespace Metroball.Lib.GameState
 {
@@ -6,7 +7,8 @@ namespace Metroball.Lib.GameState
     {
         void LoadContent();
         void UnloadContent();
-        void Update(GameTime gameTime);
+        void Update(GameTime gameTime, TouchCollection touches);
         void Draw(GameTime gameTime);
+        void Closing();
     }
 }

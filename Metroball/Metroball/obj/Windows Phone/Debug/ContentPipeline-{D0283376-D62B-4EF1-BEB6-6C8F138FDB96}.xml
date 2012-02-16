@@ -7,8 +7,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\LogoFont.xnb</Output>
-      <Time>2012-02-02T00:43:51.3965709-08:00</Time>
+      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\LogoFont.xnb</Output>
+      <Time>2012-02-11T18:48:30.1714664-08:00</Time>
     </Item>
     <Item>
       <Source>MenuFont.spritefont</Source>
@@ -16,8 +16,84 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\MenuFont.xnb</Output>
+      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\MenuFont.xnb</Output>
       <Time>2012-02-02T00:52:32.0043479-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Wall.wav</Source>
+      <Name>Wall</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\Wall.xnb</Output>
+      <Time>2011-12-18T19:50:47.9970491-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Paddle.wav</Source>
+      <Name>Paddle</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\Paddle.xnb</Output>
+      <Time>2011-12-18T19:50:47.995049-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Miss.wav</Source>
+      <Name>Miss</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\Miss.xnb</Output>
+      <Time>2011-12-18T19:50:47.9890487-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Sphere.fbx</Source>
+      <Name>Sphere</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\Sphere.xnb</Output>
+      <Time>2011-12-10T16:39:16.4940587-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Debug\Sphere_0.xml</Key>
+        <Value>2012-02-11T12:20:02.4413405-08:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Cube.fbx</Source>
+      <Name>Cube</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\Cube.xnb</Output>
+      <Time>2011-12-10T00:38:39.2073395-08:00</Time>
+      <Dependency>
+        <Key>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Debug\Cube_0.xml</Key>
+        <Value>2012-02-11T12:20:02.5163448-08:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Sphere.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Debug\Sphere_0.xml</Output>
+      <Time>2011-12-10T16:39:16.4940587-08:00</Time>
+    </Item>
+    <Item>
+      <Source>Cube.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Debug\Cube_0.xml</Output>
+      <Time>2011-12-10T00:38:39.2073395-08:00</Time>
+    </Item>
+    <Item>
+      <Source>GameFont.spritefont</Source>
+      <Name>GameFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\GameFont.xnb</Output>
+      <Time>2012-02-11T20:00:28.3384514-08:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -26,10 +102,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metroball\MetroballContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metroball\Metroball\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Timothy Strimple\documents\visual studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\MetroballContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
