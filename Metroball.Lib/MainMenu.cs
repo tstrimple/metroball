@@ -13,7 +13,7 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Metroball.Lib
 {
-    public class MainMenuGameState : GameComponent
+    public class MainMenu : GameComponent
     {
         private SpriteFont _logoFont;
         private SpriteFont _menuFont;
@@ -32,11 +32,11 @@ namespace Metroball.Lib
         public EventHandler EnableSound;
         public EventHandler DisableSound;
 
-        public MainMenuGameState(Game game, bool soundEnabled)
+        public MainMenu(Game game)
             : base(game)
         {
             _game = game;
-            SoundEnabled = soundEnabled;
+            SoundEnabled = true;
         }
 
         public void Closing()

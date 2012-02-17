@@ -13,44 +13,45 @@
     <File id="D0283376-D62B-4EF1-BEB6-6C8F138FDB96/f:GameFont.spritefont" caret="0" fromTop="0" />
     <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Program.cs" caret="385" fromTop="9" />
     <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:ExtensionMethods.cs" caret="768" fromTop="28" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:MainMenuGameState.cs" caret="1219" fromTop="22" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Service.cs" caret="6976" fromTop="15" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameOverGameState.cs" caret="2378" fromTop="39" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:IGameState.cs" caret="341" fromTop="11" />
-    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Game.cs" caret="2603" fromTop="23" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:PlayingGameState.cs" caret="1791" fromTop="40" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameStateEngine.cs" caret="3125" fromTop="24" />
+    <File id="D0283376-D62B-4EF1-BEB6-6C8F138FDB96/f:SelectedScoreFont.spritefont" caret="300" fromTop="9" />
+    <File id="D0283376-D62B-4EF1-BEB6-6C8F138FDB96/f:ScoreFont.spritefont" caret="215" fromTop="6" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:MainMenu.cs" caret="1141" fromTop="22" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:GameOver.cs" caret="3428" fromTop="20" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Service.cs" caret="7691" fromTop="27" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Playing.cs" caret="4598" fromTop="0" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Game.cs" caret="6645" fromTop="62" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="1464" fromTop="21" />
   </RecentFiles>
   <RecentEdits>
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameOverGameState.cs" caret="1710" fromTop="22" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameOverGameState.cs" caret="1697" fromTop="19" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameStateEngine.cs" caret="4982" fromTop="53" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameStateEngine.cs" caret="4731" fromTop="42" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameOverGameState.cs" caret="1710" fromTop="20" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameOverGameState.cs" caret="776" fromTop="26" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameStateEngine.cs" caret="2950" fromTop="28" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameStateEngine.cs" caret="2841" fromTop="26" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameOverGameState.cs" caret="2575" fromTop="42" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameStateEngine.cs" caret="481" fromTop="14" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:PlayingGameState.cs" caret="9384" fromTop="26" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameStateEngine.cs" caret="3954" fromTop="42" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:PlayingGameState.cs" caret="840" fromTop="12" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:PlayingGameState.cs" caret="1791" fromTop="40" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:PlayingGameState.cs" caret="1527" fromTop="32" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:PlayingGameState.cs" caret="1677" fromTop="36" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Service.cs" caret="406" fromTop="20" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Service.cs" caret="6419" fromTop="19" />
-    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Game.cs" caret="1497" fromTop="36" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameStateEngine.cs" caret="3954" fromTop="17" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameStateEngine.cs" caret="2966" fromTop="1" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameStateEngine.cs" caret="3954" fromTop="12" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameStateEngine.cs" caret="5316" fromTop="22" />
-    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Game.cs" caret="2667" fromTop="25" />
-    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Game.cs" caret="2623" fromTop="23" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameStateEngine.cs" caret="3660" fromTop="33" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameStateEngine.cs" caret="3641" fromTop="31" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameStateEngine.cs" caret="3941" fromTop="37" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameStateEngine.cs" caret="2952" fromTop="20" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameState/f:GameStateEngine.cs" caret="3457" fromTop="30" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:GameOver.cs" caret="4464" fromTop="38" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:GameOver.cs" caret="5431" fromTop="42" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:GameOver.cs" caret="5138" fromTop="127" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:GameOver.cs" caret="3803" fromTop="33" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="1068" fromTop="31" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="1253" fromTop="34" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="700" fromTop="13" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="1041" fromTop="8" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="3508" fromTop="53" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="2231" fromTop="25" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="2326" fromTop="20" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="3160" fromTop="36" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="700" fromTop="27" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="768" fromTop="30" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="2851" fromTop="26" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="3751" fromTop="46" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Playing.cs" caret="842" fromTop="29" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Playing.cs" caret="2051" fromTop="36" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Playing.cs" caret="7833" fromTop="24" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Game.cs" caret="1364" fromTop="35" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Game.cs" caret="4493" fromTop="38" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="1873" fromTop="35" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Game.cs" caret="2755" fromTop="31" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Game.cs" caret="2277" fromTop="22" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Game.cs" caret="4829" fromTop="27" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Game.cs" caret="6907" fromTop="24" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="3994" fromTop="15" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="4344" fromTop="23" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="2078" fromTop="5" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="1464" fromTop="21" />
   </RecentEdits>
 </RecentFiles>

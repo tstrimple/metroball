@@ -3,6 +3,7 @@
     <AssemblyPart x:Name="Metroball" Source="Metroball.dll" />
     <AssemblyPart x:Name="Metroball.Lib" Source="Metroball.Lib.dll" />
     <AssemblyPart x:Name="Microsoft.Advertising.Mobile.Xna" Source="Microsoft.Advertising.Mobile.Xna.dll" />
+    <AssemblyPart x:Name="Newtonsoft.Json" Source="Newtonsoft.Json.dll" />
     <AssemblyPart x:Name="Microsoft.Advertising.Mobile" Source="Microsoft.Advertising.Mobile.dll" />
   </Deployment.Parts>
 </Deployment>

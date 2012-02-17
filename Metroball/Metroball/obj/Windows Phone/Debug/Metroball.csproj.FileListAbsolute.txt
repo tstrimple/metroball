@@ -44,3 +44,6 @@ C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metrob
 C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\zh-CN\Microsoft.Advertising.Mobile.resources.dll
 C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\zh-TW\Microsoft.Advertising.Mobile.resources.dll
 C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\GameFont.xnb
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Newtonsoft.Json.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\ScoreFont.xnb
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\SelectedScoreFont.xnb

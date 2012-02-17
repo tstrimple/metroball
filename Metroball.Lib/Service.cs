@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Security.Cryptography;
+using Newtonsoft.Json.Linq;
 
 namespace Metroball.Lib
 {
@@ -16,7 +17,7 @@ namespace Metroball.Lib
         Completed
     }
 
-    public class GameResults
+    public class GameResults : EventArgs
     {
         public string Nickname { get; set; }
         public GameStatus Status { get; set; }
@@ -27,21 +28,15 @@ namespace Metroball.Lib
     }
 
     public delegate void RankAvailable(int? rank);
-    public delegate void HighScoresAvailable(Dictionary<string, int> highScores);
+    public delegate void HighScoresAvailable(HighScore[] highScores);
 
     public class ServiceRequest
     {
         public string Salt { get; set; }
         public string Url { get; set; }
         public Dictionary<string, string> Data { get; set; }
-        private EventHandler _callback;
-
-        public void SendRequest(EventHandler callback)
-        {
-            _callback = callback;
-            SendRequest();
-        }
-
+        public EventHandler Completed { get; set; }
+        
         public void SendRequest()
         {
             var webRequest = (HttpWebRequest)WebRequest.Create(Url);
@@ -51,6 +46,11 @@ namespace Metroball.Lib
             webRequest.Credentials = new NetworkCredential();
 
             webRequest.BeginGetRequestStream(new AsyncCallback(GetRequestStreamCallback), webRequest);   
+        }
+
+        protected virtual void MessageSent()
+        {
+            
         }
 
         private string GetRequestData()
@@ -79,11 +79,7 @@ namespace Metroball.Lib
             postStream.Write(postData, 0, postData.Length);
             postStream.Close();
             webRequest.BeginGetResponse(new AsyncCallback(GetResponseCallback), webRequest);
-
-            if (_callback != null)
-            {
-                _callback(this, new EventArgs());
-            }
+            MessageSent();
         }
 
         protected virtual void HandleResponse(string response)
@@ -101,6 +97,10 @@ namespace Metroball.Lib
                 var streamReader = new StreamReader(streamResponse);
                 var responseData = streamReader.ReadToEnd();
                 HandleResponse(responseData);
+                if(Completed != null)
+                {
+                    Completed.Invoke(this, new EventArgs());
+                }
                 streamResponse.Close();
                 streamReader.Close();
                 response.Close();
@@ -112,9 +112,24 @@ namespace Metroball.Lib
         }
     }
 
+    public class SessionEndRequest : ServiceRequest
+    {
+        private EventHandler _sessionEndCallback;
+
+        public SessionEndRequest(EventHandler callback)
+        {
+            _sessionEndCallback = callback;
+        }
+
+        protected override void MessageSent()
+        {
+            _sessionEndCallback.Invoke(this, new EventArgs());
+        }
+    }
+
     public class RankRequest : ServiceRequest
     {
-        private RankAvailable _rankCallback;
+        private readonly RankAvailable _rankCallback;
 
         public RankRequest(RankAvailable callback)
         {
@@ -124,7 +139,7 @@ namespace Metroball.Lib
         protected override void HandleResponse(string response)
         {
             int rank;
-            if(Int32.TryParse(response, out rank))
+            if (Int32.TryParse(response, out rank))
             {
                 _rankCallback.Invoke(rank);
             }
@@ -132,7 +147,37 @@ namespace Metroball.Lib
             {
                 _rankCallback.Invoke(null);
             }
-            
+
+        }
+    }
+
+    public class HighScore
+    {
+        public string GameId { get; set; }
+        public string Name { get; set; }
+        public string Score { get; set; }
+    }
+
+    public class HighScoreRequest : ServiceRequest
+    {
+        private readonly HighScoresAvailable _highScoreCallback;
+
+        public HighScoreRequest(HighScoresAvailable callback)
+        {
+            _highScoreCallback = callback;
+        }
+
+        protected override void HandleResponse(string response)
+        {
+            var jsonObject = JArray.Parse(response);
+            var highScores = jsonObject.Children().Select(hs =>
+                                                    new HighScore()
+                                                        {
+                                                            GameId = hs["_id"].ToString(),
+                                                            Name = hs["name"].ToString(),
+                                                            Score = hs["score"].ToString()
+                                                        }).ToArray();
+            _highScoreCallback.Invoke(highScores);
         }
     }
 
@@ -169,17 +214,22 @@ namespace Metroball.Lib
                                {"started", started},
                                {"ended", DateTime.UtcNow.ToUnixTime().ToString(CultureInfo.InvariantCulture)}
                            };
-            var request = new ServiceRequest()
+            var request = new SessionEndRequest(callback)
             {
                 Data = data,
                 Salt = SecretKey,
                 Url = String.Format("{0}SessionEnded/", ServiceUrl)
             };
 
-            request.SendRequest(callback);
+            request.SendRequest();
         }
 
         public static void UpdateGameStatus(string gameId, string userId, string sessionId, GameResults results)
+        {
+            UpdateGameStatus(gameId, userId, sessionId, results, null);
+        }
+
+        public static void UpdateGameStatus(string gameId, string userId, string sessionId, GameResults results, EventHandler callback)
         {
             var data = new Dictionary<string, string>()
                            {
@@ -197,7 +247,8 @@ namespace Metroball.Lib
             {
                 Data = data,
                 Salt = SecretKey,
-                Url = String.Format("{0}UpdateGameStatus/", ServiceUrl)
+                Url = String.Format("{0}UpdateGameStatus/", ServiceUrl),
+                Completed = callback
             };
 
             request.SendRequest();
@@ -236,7 +287,16 @@ namespace Metroball.Lib
 
         public static void GetHighScores(HighScoresAvailable highScoresCallback)
         {
-            highScoresCallback.Invoke(new Dictionary<string, int>() { { "timmay!", 10000000 }, { "mathachew", 1000000 }, { "aiden", 100000 }, { "makayla", 10000 }, { "elizabeth", 1000 } });
+            var data = new Dictionary<string, string>() { { "score", "10" } };
+            var request = new HighScoreRequest(highScoresCallback)
+            {
+                Data = data,
+                Salt = SecretKey,
+                Url = String.Format("{0}GetHighScores/", ServiceUrl)
+            };
+
+            request.SendRequest();
+
         }
     }
 }

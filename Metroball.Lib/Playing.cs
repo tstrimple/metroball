@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using Metroball.Lib.GameObjects;
 using Metroball.Lib.UI;
@@ -19,11 +20,14 @@ namespace Metroball.Lib
 {
     public class GameOverEventArgs : EventArgs
     {
+        public string GameId { get; set; }
         public int Score { get; set; }
+        public string Rank { get; set; }
     }
 
-    public class PlayingGameState : GameComponent
+    public class Playing : GameComponent
     {
+        private Flash _flash;
         private string _userId;
         private string _sessionId;
         public string GameId { get; set; }
@@ -33,8 +37,6 @@ namespace Metroball.Lib
         public bool SoundEnabled { get; set; }
         private SpriteBatch _spriteBatch;
         private readonly Game _game;
-
-        private bool _holdingPaddle;
 
         private Ball _ball;
         private Arena _arena;
@@ -58,11 +60,12 @@ namespace Metroball.Lib
 
         public DateTime Started { get; set; }
 
-        public EventHandler<GameOverEventArgs> GameOver;
+        public EventHandler<GameResults> GameOver;
 
-        public PlayingGameState(Game game, bool soundEnabled, string userId, string sessionId)
+        public Playing(Game game, string userId, string sessionId, Flash flash)
             : base(game)
         {
+            _flash = flash;
             Rank = "N/A";
             Started = DateTime.UtcNow;
             _userId = userId;
@@ -71,14 +74,15 @@ namespace Metroball.Lib
             _adGameComponent = AdGameComponent.Current;
 
             _averageVelocity = new List<Vector3>();
-            _holdingPaddle = false;
-
+            
             _game = game;
-            SoundEnabled = soundEnabled;
+            SoundEnabled = true;
         }
 
         public void Reset()
         {
+            _playerPaddle.Velocity = Vector3.Zero;
+            _ball.Reset();
             _cpuLives = 3;
             _playerLives = 3;
             Level = 1;
@@ -201,6 +205,7 @@ namespace Metroball.Lib
                     {
                         _cpuLives = 3;
                         Level += 1;
+                        _flash.Message = String.Format("Level {0}", Level);
                     }
                     _ball.Reset();
                     _arena.Color = Color.Red;
@@ -245,8 +250,7 @@ namespace Metroball.Lib
                     _playerLives -= 1;
                     if (_playerLives <= 0)
                     {
-                        Service.GetRank(Score, UpdateRank);
-                        GameOver.Invoke(this, new GameOverEventArgs() {Score = Score});
+                        Service.GetRank(Score, UpdateFinalRank);
                     }
                     else
                     {
@@ -258,6 +262,26 @@ namespace Metroball.Lib
                     _arena.Color = Color.Red;
                 }
             }
+        }
+
+        private void UpdateFinalRank(int? rank)
+        {
+            if (rank.HasValue)
+            {
+                Rank = rank.Value.ToString(CultureInfo.InvariantCulture);
+            }
+
+            var results = new GameResults()
+                              {
+                                  Level = Level,
+                                  Score = Score,
+                                  Started = Started,
+                                  Status = GameStatus.InProgress,
+                                  Ended = DateTime.UtcNow
+                              };
+
+            Service.UpdateGameStatus(GameId, _userId, _sessionId, results);
+            GameOver.Invoke(this, results);
         }
 
         private bool CheckForPaddleCollission(Paddle paddle)
@@ -317,22 +341,17 @@ namespace Metroball.Lib
             {
                 var press = touches[0];
 
-                if (!_holdingPaddle & press.State == TouchLocationState.Pressed)
-                {
-                    _holdingPaddle = true;
-                }
-                else if (_holdingPaddle && press.State == TouchLocationState.Released)
-                {
-                    _holdingPaddle = false;
-                    _playerPaddle.Velocity = Vector3.Zero;
-                }
-                else if (_holdingPaddle && press.State == TouchLocationState.Moved)
+                if (press.State == TouchLocationState.Moved)
                 {
                     TouchLocation previousPress;
                     if (press.TryGetPreviousLocation(out previousPress))
                     {
                         _playerPaddle.Velocity = GetCursorPosition(press.Position) - GetCursorPosition(previousPress.Position);
                     }
+                }
+                else if(press.State == TouchLocationState.Released)
+                {
+                    _playerPaddle.Velocity = Vector3.Zero;
                 }
             }
 
