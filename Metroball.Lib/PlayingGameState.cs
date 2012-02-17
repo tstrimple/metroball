@@ -15,14 +15,14 @@ using Microsoft.Xna.Framework.Media;
 
 using Microsoft.Advertising.Mobile.Xna;
 
-namespace Metroball.Lib.GameState
+namespace Metroball.Lib
 {
     public class GameOverEventArgs : EventArgs
     {
         public int Score { get; set; }
     }
 
-    public class PlayingGameState : GameComponent, IGameState
+    public class PlayingGameState : GameComponent
     {
         private string _userId;
         private string _sessionId;
@@ -77,6 +77,16 @@ namespace Metroball.Lib.GameState
             SoundEnabled = soundEnabled;
         }
 
+        public void Reset()
+        {
+            _cpuLives = 3;
+            _playerLives = 3;
+            Level = 1;
+            Score = 0;
+            _volleyCount = 0;
+            _curveBonus = false;
+        }
+
         public void LoadContent()
         {
             _spriteBatch = new SpriteBatch(_game.GraphicsDevice);
@@ -87,18 +97,11 @@ namespace Metroball.Lib.GameState
             _paddle = _game.Content.Load<SoundEffect>("Paddle");
             _wall = _game.Content.Load<SoundEffect>("Wall");
 
-            _cpuLives = 3;
-            _playerLives = 3;
-            Level = 1;
-            Score = 0;
-            _volleyCount = 0;
-
             _ball = new Ball(model);
             _arena = new Arena();
             _depthLine = new DepthLine(_ball, _arena);
             _cpuPaddle = new AutoPaddle(_ball, _arena, _arena.Far);
             _playerPaddle = new Paddle(_arena, _arena.Near);
-            _curveBonus = false;
 
             _ad = _adGameComponent.CreateAd("81995", new Rectangle(320, 0, 480, 80));
 
@@ -133,7 +136,6 @@ namespace Metroball.Lib.GameState
 
         public void UnloadContent()
         {
-
         }
 
         private Vector3 GetCursorPosition(Vector2 touchPosition)

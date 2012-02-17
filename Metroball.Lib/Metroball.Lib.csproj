@@ -70,11 +70,10 @@
     <Compile Include="GameObjects\GameObject.cs" />
     <Compile Include="GameObjects\IRenderable.cs" />
     <Compile Include="GameObjects\Paddle.cs" />
-    <Compile Include="GameState\GameOverGameState.cs" />
-    <Compile Include="GameState\PlayingGameState.cs" />
-    <Compile Include="GameState\GameStateEngine.cs" />
-    <Compile Include="GameState\IGameState.cs" />
-    <Compile Include="GameState\MainMenuGameState.cs" />
+    <Compile Include="GameOverGameState.cs" />
+    <Compile Include="GameState.cs" />
+    <Compile Include="PlayingGameState.cs" />
+    <Compile Include="MainMenuGameState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service.cs" />
     <Compile Include="UI\Button.cs" />

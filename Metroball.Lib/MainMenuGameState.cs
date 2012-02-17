@@ -11,9 +11,9 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
 using Microsoft.Xna.Framework.Media;
 
-namespace Metroball.Lib.GameState
+namespace Metroball.Lib
 {
-    public class MainMenuGameState : GameComponent, IGameState
+    public class MainMenuGameState : GameComponent
     {
         private SpriteFont _logoFont;
         private SpriteFont _menuFont;

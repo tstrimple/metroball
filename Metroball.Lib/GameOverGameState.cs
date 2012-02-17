@@ -11,21 +11,17 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
 using Microsoft.Xna.Framework.Media;
 
-namespace Metroball.Lib.GameState
+namespace Metroball.Lib
 {
-    public class GameOverGameState : GameComponent, IGameState
+    public class GameOverGameState : GameComponent
     {
         private SpriteFont _logoFont;
         private SpriteFont _menuFont;
-
         private Button _startButton;
-        
         private SpriteBatch _spriteBatch;
 
         private readonly Game _game;
-
         public string Name { get; set; }
-
         public int Score { get; set; }
 
         public EventHandler PlayGame;
