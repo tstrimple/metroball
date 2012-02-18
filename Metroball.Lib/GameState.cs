@@ -7,9 +7,9 @@ namespace Metroball.Lib
 {
     public enum GameState
     {
-        MainMenu,
-        Playing,
-        GameOver,
+        MenuScreen,
+        GameScreen,
+        ResultsScreen,
         Exiting
     }
 }

@@ -29,6 +29,24 @@
       <Time>2012-02-11T20:00:28.3384514-08:00</Time>
     </Item>
     <Item>
+      <Source>ScoreFont.spritefont</Source>
+      <Name>ScoreFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\ScoreFont.xnb</Output>
+      <Time>2012-02-16T22:54:10.2046663-08:00</Time>
+    </Item>
+    <Item>
+      <Source>SelectedScoreFont.spritefont</Source>
+      <Name>SelectedScoreFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\SelectedScoreFont.xnb</Output>
+      <Time>2012-02-16T22:54:30.218811-08:00</Time>
+    </Item>
+    <Item>
       <Source>Wall.wav</Source>
       <Name>Wall</Name>
       <Importer>WavImporter</Importer>
@@ -65,7 +83,7 @@
       <Time>2011-12-10T16:39:16.4940587-08:00</Time>
       <Dependency>
         <Key>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Debug\Sphere_0.xml</Key>
-        <Value>2012-02-16T18:14:21.7554219-08:00</Value>
+        <Value>2012-02-17T19:11:40.2798077-08:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -78,7 +96,7 @@
       <Time>2011-12-10T00:38:39.2073395-08:00</Time>
       <Dependency>
         <Key>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Debug\Cube_0.xml</Key>
-        <Value>2012-02-16T18:14:21.8884295-08:00</Value>
+        <Value>2012-02-17T19:11:40.3568121-08:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -94,24 +112,6 @@
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Debug\Cube_0.xml</Output>
       <Time>2011-12-10T00:38:39.2073395-08:00</Time>
-    </Item>
-    <Item>
-      <Source>ScoreFont.spritefont</Source>
-      <Name>ScoreFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\ScoreFont.xnb</Output>
-      <Time>2012-02-16T22:54:10.2046663-08:00</Time>
-    </Item>
-    <Item>
-      <Source>SelectedScoreFont.spritefont</Source>
-      <Name>SelectedScoreFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\SelectedScoreFont.xnb</Output>
-      <Time>2012-02-16T22:54:30.218811-08:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

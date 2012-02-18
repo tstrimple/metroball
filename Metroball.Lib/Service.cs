@@ -6,27 +6,11 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Security.Cryptography;
+using Metroball.Lib.Settings;
 using Newtonsoft.Json.Linq;
 
 namespace Metroball.Lib
 {
-    public enum GameStatus
-    {
-        InProgress,
-        Abandoned,
-        Completed
-    }
-
-    public class GameResults : EventArgs
-    {
-        public string Nickname { get; set; }
-        public GameStatus Status { get; set; }
-        public int Level { get; set; }
-        public int Score { get; set; }
-        public DateTime Started { get; set; }
-        public DateTime? Ended { get; set; }
-    }
-
     public delegate void RankAvailable(int? rank);
     public delegate void HighScoresAvailable(HighScore[] highScores);
 
@@ -108,6 +92,7 @@ namespace Metroball.Lib
             }
             catch (WebException e)
             {
+                HandleResponse("");
             }
         }
     }
@@ -154,8 +139,15 @@ namespace Metroball.Lib
     public class HighScore
     {
         public string GameId { get; set; }
+        public int? Rank { get; set; }
         public string Name { get; set; }
         public string Score { get; set; }
+        public bool Current { get; set; }
+
+        public HighScore()
+        {
+            Current = false;
+        }
     }
 
     public class HighScoreRequest : ServiceRequest
@@ -169,30 +161,40 @@ namespace Metroball.Lib
 
         protected override void HandleResponse(string response)
         {
-            var jsonObject = JArray.Parse(response);
-            var highScores = jsonObject.Children().Select(hs =>
-                                                    new HighScore()
+            try
+            {
+                var jsonObject = JArray.Parse(response);
+                var highScores = jsonObject.Children().Select(hs =>
+                                                        new HighScore()
                                                         {
                                                             GameId = hs["_id"].ToString(),
                                                             Name = hs["name"].ToString(),
                                                             Score = hs["score"].ToString()
                                                         }).ToArray();
-            _highScoreCallback.Invoke(highScores);
+                _highScoreCallback.Invoke(highScores);
+                return;
+            }
+            catch (Exception)
+            {
+                _highScoreCallback.Invoke(null);
+                throw;
+            }
+            
         }
     }
 
     public static class Service
     {
         public const string ServiceUrl = "https://hax.io/mb/";
-        public static string SecretKey { get; set; }
+        public static string SecretKey { get { return SettingsManager.ApplicationId; }}
 
-        public static void SessionStarted(string userId, string sessionId, string started)
+        public static void SessionStarted(string userId, string sessionId, int started)
         {
             var data = new Dictionary<string, string>()
                            {
                                {"_id", sessionId},
                                {"userId", userId},
-                               {"started", started},
+                               {"started", started.ToString(CultureInfo.InvariantCulture)},
                                {"ended", ""}
                            };
             var request = new ServiceRequest()
@@ -205,14 +207,14 @@ namespace Metroball.Lib
             request.SendRequest();
         }
 
-        public static void SessionEnded(string userId, string sessionId, string started, string ended, EventHandler callback)
+        public static void SessionEnded(string userId, string sessionId, int started, int ended, EventHandler callback)
         {
             var data = new Dictionary<string, string>()
                            {
                                {"_id", sessionId},
                                {"userId", userId},
-                               {"started", started},
-                               {"ended", DateTime.UtcNow.ToUnixTime().ToString(CultureInfo.InvariantCulture)}
+                               {"started", started.ToString(CultureInfo.InvariantCulture)},
+                               {"ended", ended.ToString(CultureInfo.InvariantCulture)}
                            };
             var request = new SessionEndRequest(callback)
             {
@@ -224,24 +226,24 @@ namespace Metroball.Lib
             request.SendRequest();
         }
 
-        public static void UpdateGameStatus(string gameId, string userId, string sessionId, GameResults results)
+        public static void UpdateGameStatus(string userId, string sessionId, Results results)
         {
-            UpdateGameStatus(gameId, userId, sessionId, results, null);
+            UpdateGameStatus(userId, sessionId, results, null);
         }
 
-        public static void UpdateGameStatus(string gameId, string userId, string sessionId, GameResults results, EventHandler callback)
+        public static void UpdateGameStatus(string userId, string sessionId, Results results, EventHandler callback)
         {
             var data = new Dictionary<string, string>()
                            {
-                               {"_id", gameId},    
+                               {"_id", results.GameId},    
                                {"userId", userId},
                                {"sessionId", sessionId},
-                               {"name", results.Nickname},
+                               {"name", results.Name},
                                {"score", results.Score.ToString(CultureInfo.InvariantCulture)},
                                {"level", results.Level.ToString(CultureInfo.InvariantCulture)},
-                               {"status", results.Status.ToString()},
-                               {"started", results.Started.ToUnixTime().ToString(CultureInfo.InvariantCulture)},
-                               {"ended", results.Ended.HasValue ? results.Ended.Value.ToUnixTime().ToString(CultureInfo.InvariantCulture) : ""}
+                               {"status", results.GameStatus.ToString()},
+                               {"started", results.Started.ToString(CultureInfo.InvariantCulture)},
+                               {"ended", results.Ended.ToString(CultureInfo.InvariantCulture)}
                            };
             var request = new ServiceRequest()
             {

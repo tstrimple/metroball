@@ -92,6 +92,11 @@ namespace Metroball.Lib.GameObjects
                     };
         }
 
+        public void Reset()
+        {
+            Position = new Vector3(0.0f, 0.0f, Position.Z);
+        }
+
         protected override BoundingBox BuildBoundingBox()
         {
             var min = new Vector3

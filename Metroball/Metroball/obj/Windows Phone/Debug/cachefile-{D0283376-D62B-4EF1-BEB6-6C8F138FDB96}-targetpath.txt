@@ -1,10 +1,10 @@
 Content\LogoFont.xnb
 Content\MenuFont.xnb
 Content\GameFont.xnb
+Content\ScoreFont.xnb
+Content\SelectedScoreFont.xnb
 Content\Wall.xnb
 Content\Paddle.xnb
 Content\Miss.xnb
 Content\Sphere.xnb
 Content\Cube.xnb
-Content\ScoreFont.xnb
-Content\SelectedScoreFont.xnb

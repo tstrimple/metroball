@@ -63,8 +63,12 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\GameScreen.cs" />
+    <Compile Include="Components\ResultsScreen.cs" />
+    <Compile Include="Components\MenuScreen.cs" />
+    <Compile Include="Components\FlashMessage.cs" />
     <Compile Include="ExtensionMethods.cs" />
-    <Compile Include="Flash.cs" />
+    <Compile Include="GameData.cs" />
     <Compile Include="GameObjects\Arena.cs" />
     <Compile Include="GameObjects\AutoPaddle.cs" />
     <Compile Include="GameObjects\Ball.cs" />
@@ -72,12 +76,13 @@
     <Compile Include="GameObjects\GameObject.cs" />
     <Compile Include="GameObjects\IRenderable.cs" />
     <Compile Include="GameObjects\Paddle.cs" />
-    <Compile Include="GameOver.cs" />
     <Compile Include="GameState.cs" />
-    <Compile Include="Playing.cs" />
-    <Compile Include="MainMenu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Results.cs" />
     <Compile Include="Service.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="Settings\SettingsManager.cs" />
+    <Compile Include="Components\DelayedCallback.cs" />
     <Compile Include="UI\Button.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -47,3 +47,9 @@ C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metrob
 C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Newtonsoft.Json.dll
 C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\ScoreFont.xnb
 C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Content\SelectedScoreFont.xnb
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\Metroball.xap
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Debug\XapCacheFile.xml
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Debug\AppManifest.xaml
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Debug\WMAppManifest.xml.g
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Debug\WMAppManifest.xml
+bin\Windows Phone\Debug\
