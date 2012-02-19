@@ -130,6 +130,7 @@ namespace Metroball
 
         private void PlayGame(object sender, EventArgs eventArgs)
         {
+            _gameScreen.Reset();
             GameData.Results.NewGame();
             ShowGame();
         }

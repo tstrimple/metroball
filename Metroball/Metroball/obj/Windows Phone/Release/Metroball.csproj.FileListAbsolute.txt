@@ -47,3 +47,9 @@ C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metrob
 bin\Windows Phone\Release\
 C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Metroball.xap
 C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Release\XapCacheFile.xml
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Metroball.xap
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Release\XapCacheFile.xml
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Release\AppManifest.xaml
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Release\WMAppManifest.xml.g
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Release\WMAppManifest.xml
+bin\Windows Phone\Release\
