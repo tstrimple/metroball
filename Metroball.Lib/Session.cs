@@ -17,10 +17,5 @@ namespace Metroball.Lib
             StartTime = DateTime.UtcNow.ToUnixTime();
             EndTime = -1;
         }
-
-        public void EndSession()
-        {
-            EndTime = DateTime.UtcNow.ToUnixTime();
-        }
     }
 }

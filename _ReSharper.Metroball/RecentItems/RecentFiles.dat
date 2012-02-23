@@ -1,57 +1,63 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:Properties/f:AssemblyInfo.cs" caret="0" fromTop="0" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:UI/f:Button.cs" caret="0" fromTop="0" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameObjects/f:IRenderable.cs" caret="60" fromTop="2" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameObjects/f:GameObject.cs" caret="1264" fromTop="47" />
     <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameObjects/f:DepthLine.cs" caret="105" fromTop="4" />
     <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameObjects/f:Ball.cs" caret="0" fromTop="0" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameObjects/f:AutoPaddle.cs" caret="0" fromTop="0" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameObjects/f:Arena.cs" caret="4371" fromTop="108" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameObjects/f:Paddle.cs" caret="3780" fromTop="114" />
     <File id="D0283376-D62B-4EF1-BEB6-6C8F138FDB96/f:LogoFont.spritefont" caret="194" fromTop="5" />
     <File id="D0283376-D62B-4EF1-BEB6-6C8F138FDB96/f:GameFont.spritefont" caret="0" fromTop="0" />
-    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Program.cs" caret="385" fromTop="9" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:ExtensionMethods.cs" caret="768" fromTop="28" />
     <File id="D0283376-D62B-4EF1-BEB6-6C8F138FDB96/f:SelectedScoreFont.spritefont" caret="300" fromTop="9" />
     <File id="D0283376-D62B-4EF1-BEB6-6C8F138FDB96/f:ScoreFont.spritefont" caret="215" fromTop="6" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:MainMenu.cs" caret="1141" fromTop="22" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:GameOver.cs" caret="3428" fromTop="20" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Service.cs" caret="7691" fromTop="27" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Playing.cs" caret="4598" fromTop="0" />
-    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Game.cs" caret="6645" fromTop="62" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="1464" fromTop="21" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:ExtensionMethods.cs" caret="589" fromTop="18" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/d:Properties/f:AssemblyInfo.cs" caret="0" fromTop="0" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/d:Properties/f:AppManifest.xml" caret="0" fromTop="0" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameObjects/f:Paddle.cs" caret="3535" fromTop="51" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameObjects/f:AutoPaddle.cs" caret="147" fromTop="5" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/d:Properties/f:WMAppManifest.xml" caret="0" fromTop="0" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Program.cs" caret="0" fromTop="0" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:GameState.cs" caret="247" fromTop="15" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:Settings/f:SettingsManager.cs" caret="654" fromTop="22" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:Components/f:DelayedCallback.cs" caret="834" fromTop="29" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:Components/f:GameScreen.cs" caret="4381" fromTop="6" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:Components/f:ResultsScreen.cs" caret="4632" fromTop="48" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameObjects/f:Arena.cs" caret="1035" fromTop="10" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:Components/f:FlashMessage.cs" caret="3960" fromTop="43" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameObjects/f:GameObject.cs" caret="976" fromTop="31" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:Components/f:MenuScreen.cs" caret="2086" fromTop="1" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Session.cs" caret="137" fromTop="7" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Service.cs" caret="377" fromTop="14" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:GameData.cs" caret="263" fromTop="11" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Results.cs" caret="1044" fromTop="23" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="5701" fromTop="20" />
   </RecentFiles>
   <RecentEdits>
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:GameOver.cs" caret="4464" fromTop="38" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:GameOver.cs" caret="5431" fromTop="42" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:GameOver.cs" caret="5138" fromTop="127" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:GameOver.cs" caret="3803" fromTop="33" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="1068" fromTop="31" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="1253" fromTop="34" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="700" fromTop="13" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="1041" fromTop="8" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="3508" fromTop="53" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="2231" fromTop="25" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="2326" fromTop="20" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="3160" fromTop="36" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="700" fromTop="27" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="768" fromTop="30" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="2851" fromTop="26" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="3751" fromTop="46" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Playing.cs" caret="842" fromTop="29" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Playing.cs" caret="2051" fromTop="36" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Playing.cs" caret="7833" fromTop="24" />
-    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Game.cs" caret="1364" fromTop="35" />
-    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Game.cs" caret="4493" fromTop="38" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="1873" fromTop="35" />
-    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Game.cs" caret="2755" fromTop="31" />
-    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Game.cs" caret="2277" fromTop="22" />
-    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Game.cs" caret="4829" fromTop="27" />
-    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:Game.cs" caret="6907" fromTop="24" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="3994" fromTop="15" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="4344" fromTop="23" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="2078" fromTop="5" />
-    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Flash.cs" caret="1464" fromTop="21" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="3405" fromTop="45" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="3405" fromTop="45" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="2912" fromTop="30" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="3405" fromTop="38" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="8751" fromTop="33" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="8751" fromTop="38" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="2940" fromTop="18" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="8751" fromTop="16" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:Components/f:ResultsScreen.cs" caret="4092" fromTop="32" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:Components/f:ResultsScreen.cs" caret="4379" fromTop="40" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:Components/f:ResultsScreen.cs" caret="3523" fromTop="26" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:Components/f:ResultsScreen.cs" caret="3755" fromTop="32" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:Components/f:FlashMessage.cs" caret="3960" fromTop="43" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:Components/f:MenuScreen.cs" caret="2808" fromTop="17" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="4360" fromTop="22" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/d:GameObjects/f:GameObject.cs" caret="976" fromTop="31" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="4797" fromTop="20" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="6815" fromTop="45" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="6223" fromTop="45" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="6483" fromTop="25" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="7492" fromTop="45" />
+    <File id="D99636BF-7EEC-46D4-A547-EE77CB7AA471/f:Session.cs" caret="492" fromTop="18" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="2694" fromTop="31" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="2957" fromTop="41" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="1278" fromTop="20" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="7088" fromTop="22" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="2779" fromTop="39" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="4559" fromTop="4" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="2565" fromTop="3" />
+    <File id="DBB8CDA4-428F-482A-94C7-7072F43813DC/f:MetroballGame.cs" caret="5701" fromTop="20" />
   </RecentEdits>
 </RecentFiles>

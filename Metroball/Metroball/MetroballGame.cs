@@ -36,9 +36,33 @@ namespace Metroball
 
             _flashMessage = new FlashMessage(this) { DrawOrder = 1 };
 
-            _menuScreen = new MenuScreen(this) { PlayGame = PlayGame, ExitMenuScreen = (sender, args) => Service.SessionEnded(GameData.UserId, GameData.Session.SessionId, GameData.Session.StartTime, GameData.Session.EndTime, (o, a) => Exit()), DrawOrder = 2 };
-            _gameScreen = new GameScreen(this) { ComputerScored = ComputerScored, PlayerScored = PlayerScored, Results = GameData.Results, ExitGameScreen = (sender, args) => ShowMenu(), DrawOrder = 2};
-            _resultsScreen = new ResultsScreen(this) { PlayGame = PlayGame, ExitResultsScreen = (sender, args) => ShowMenu(), DrawOrder = 2 };
+            _menuScreen = new MenuScreen(this)
+                              {
+                                  PlayGame = PlayGame,
+                                  ExitMenuScreen =
+                                      (sender, args) =>
+                                      Service.SessionEnded(GameData.UserId, GameData.Session.SessionId,
+                                                           GameData.Session.StartTime,
+                                                           DateTime.UtcNow.ToUnixTime(), (o, a) => Exit()),
+                                  DrawOrder = 2
+                              };
+
+            _gameScreen = new GameScreen(this)
+                              {
+                                  ComputerScored = ComputerScored,
+                                  PlayerScored = PlayerScored,
+                                  Results = GameData.Results,
+                                  ExitGameScreen = delegate
+                                                       {
+                                                           GameData.Results.GameStatus = GameStatus.Abandoned;
+                                                           Service.UpdateGameStatus(GameData.UserId, GameData.Session.SessionId, GameData.Results);
+                                                           ShowMenu();
+                                                       },
+                                  DrawOrder = 2
+                              };
+
+            _resultsScreen = new ResultsScreen(this)
+                                 {PlayGame = PlayGame, ExitResultsScreen = (sender, args) => ShowMenu(), DrawOrder = 2};
 
             Components.Add(_flashMessage);
             Components.Add(_menuScreen);
@@ -99,6 +123,7 @@ namespace Metroball
 
         private void FreezeGame()
         {
+            Service.UpdateGameStatus(GameData.UserId, GameData.Session.SessionId, GameData.Results);
             _gameScreen.Alert = true;
             _gameScreen.Enabled = false;
         }
@@ -132,6 +157,7 @@ namespace Metroball
         {
             _gameScreen.Reset();
             GameData.Results.NewGame();
+            Service.UpdateGameStatus(GameData.UserId, GameData.Session.SessionId, GameData.Results);
             ShowGame();
         }
 
@@ -161,6 +187,7 @@ namespace Metroball
             GameData.Results.PlayerLives--;
             if (GameData.Results.PlayerLives <= 0)
             {
+                GameData.Results.GameStatus = GameStatus.Completed;
                 ShowResults();
                 GetName(
                     (o, args) =>
