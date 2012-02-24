@@ -97,7 +97,7 @@ namespace Metroball.Lib.Components
                     var name = highScore.Name;
                     var nameSize = _scoreFont.MeasureString(name);
 
-                    while(nameSize.X > 120)
+                    while(nameSize.X > 160)
                     {
                         name = name.Substring(0, name.Length - 1);
                         nameSize = _scoreFont.MeasureString(name);
@@ -113,14 +113,14 @@ namespace Metroball.Lib.Components
 
                     _spriteBatch.DrawString(_scoreFont, highScore.Score, new Vector2(Game.GraphicsDevice.Viewport.Width - 20 - scoreSize.X, row), color);
 
-                    _spriteBatch.DrawString(_scoreFont, name, new Vector2(Game.GraphicsDevice.Viewport.Width - 140 - nameSize.X, row), color);
+                    _spriteBatch.DrawString(_scoreFont, name, new Vector2(Game.GraphicsDevice.Viewport.Width - 120 - nameSize.X, row), color);
 
-                    _spriteBatch.DrawString(_scoreFont, String.Format("#{0}", rank), new Vector2(Game.GraphicsDevice.Viewport.Width - 260 - rankSize.X, row), color);
+                    _spriteBatch.DrawString(_scoreFont, String.Format("#{0}", rank), new Vector2(Game.GraphicsDevice.Viewport.Width - 280 - rankSize.X, row), color);
 
                     counter++;
                 }
 
-                _spriteBatch.DrawString(_selectedScoreFont, "high scores", new Vector2(460, 300), Color.Gray, -MathHelper.PiOver2, new Vector2(0, 0), 1.0f, SpriteEffects.None, 0);
+                _spriteBatch.DrawString(_selectedScoreFont, "high scores", new Vector2(440, 300), Color.Gray, -MathHelper.PiOver2, new Vector2(0, 0), 1.0f, SpriteEffects.None, 0);
             }
 
             _startButton.Draw(_spriteBatch);

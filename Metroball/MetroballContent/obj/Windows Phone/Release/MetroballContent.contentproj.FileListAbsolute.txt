@@ -1,1 +1,1 @@
-C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\MetroballContent\obj\Windows Phone\Release\ResolveAssemblyReference.cache
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\metroball\Metroball\MetroballContent\obj\Windows Phone\Release\ResolveAssemblyReference.cache

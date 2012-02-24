@@ -233,6 +233,16 @@ namespace Metroball
 
         private void GetName(EventHandler successCallback)
         {
+            if(Guide.IsVisible)
+            {
+                if (successCallback != null)
+                {
+                    successCallback.Invoke(this, new EventArgs());
+                }
+
+                return;
+            }
+
             Guide.BeginShowKeyboardInput(
                 PlayerIndex.One,
                 "Save your high score!",

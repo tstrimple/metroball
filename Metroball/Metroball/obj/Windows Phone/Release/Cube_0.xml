@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>Cube</Name>
     <Identity>
-      <SourceFilename>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\MetroballContent\Cube.fbx</SourceFilename>
+      <SourceFilename>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\metroball\Metroball\MetroballContent\Cube.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 0 -1 0 0 1 0 0 -3.67148113 1.41146624 6.572603 1</Transform>
