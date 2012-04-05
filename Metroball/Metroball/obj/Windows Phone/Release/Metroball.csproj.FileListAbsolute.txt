@@ -47,9 +47,105 @@ C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metrob
 bin\Windows Phone\Release\
 C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Metroball.xap
 C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Release\XapCacheFile.xml
-C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Metroball.xap
-C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Release\XapCacheFile.xml
-C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\bin\Windows Phone\Release\AppManifest.xaml
-C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Release\WMAppManifest.xml.g
-C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\Metroball\Metroball\Metroball\obj\Windows Phone\Release\WMAppManifest.xml
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\LogoFont.xnb
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\MenuFont.xnb
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\GameFont.xnb
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\ScoreFont.xnb
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\SelectedScoreFont.xnb
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Wall.xnb
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Paddle.xnb
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Miss.xnb
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Sphere.xnb
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Cube.xnb
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Metroball.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Metroball.pdb
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Metroball.Lib.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Microsoft.Advertising.Mobile.Xna.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Newtonsoft.Json.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Microsoft.Advertising.Mobile.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Metroball.Lib.pdb
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Microsoft.Advertising.Mobile.Xna.xml
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\cs-CZ\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\da-DK\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\de-DE\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\el-GR\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\en-GB\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\es-ES\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\fi-FI\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\fr-FR\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\hu-HU\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\it-IT\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\ja-JP\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\ko-KR\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\nb-NO\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\nl-NL\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\pl-PL\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\pt-BR\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\pt-PT\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\ru-RU\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\sv-SE\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\zh-CN\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\zh-TW\Microsoft.Advertising.Mobile.resources.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\ResolveAssemblyReference.cache
+D:\Code\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Code\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\Metroball.dll
+D:\Code\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\Metroball.pdb
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\AppManifest.xaml
+D:\Code\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\WMAppManifest.xml.g
+D:\Code\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\WMAppManifest.xml
+D:\Code\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Metroball.xap
+D:\Code\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\XapCacheFile.xml
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\LogoFont.xnb
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\MenuFont.xnb
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\GameFont.xnb
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\ScoreFont.xnb
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\SelectedScoreFont.xnb
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Wall.xnb
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Paddle.xnb
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Miss.xnb
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Sphere.xnb
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Cube.xnb
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Metroball.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Metroball.pdb
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Metroball.Lib.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Microsoft.Advertising.Mobile.Xna.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Newtonsoft.Json.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Microsoft.Advertising.Mobile.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Metroball.Lib.pdb
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Microsoft.Advertising.Mobile.Xna.xml
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\cs-CZ\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\da-DK\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\de-DE\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\el-GR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\en-GB\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\es-ES\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\fi-FI\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\fr-FR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\hu-HU\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\it-IT\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\ja-JP\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\ko-KR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\nb-NO\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\nl-NL\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\pl-PL\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\pt-BR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\pt-PT\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\ru-RU\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\sv-SE\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\zh-CN\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\zh-TW\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\ResolveAssemblyReference.cache
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\Metroball.dll
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\Metroball.pdb
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\AppManifest.xaml
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\WMAppManifest.xml.g
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\WMAppManifest.xml
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Metroball.xap
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\XapCacheFile.xml
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Metroball.xap
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\XapCacheFile.xml
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\AppManifest.xaml
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\WMAppManifest.xml.g
+C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\WMAppManifest.xml
 bin\Windows Phone\Release\

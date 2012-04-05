@@ -43,8 +43,14 @@ namespace Metroball.Lib.Settings
 
         public static bool SoundEnabled
         {
-            get { return (bool) GetSetting("SoundEnabled", true); }
+            get { return (bool)GetSetting("SoundEnabled", true); }
             set { SaveSetting("SoundEnabled", value); }
+        }
+
+        public static bool DisplayTopPlayers
+        {
+            get { return (bool)GetSetting("DisplayTopPlayers", false); }
+            set { SaveSetting("DisplayTopPlayers", value); }
         }
 
         public static string Name

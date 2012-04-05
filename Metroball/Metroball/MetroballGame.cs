@@ -1,10 +1,14 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Globalization;
 using System.Linq;
+using System.Windows;
 using Metroball.Lib;
 using Metroball.Lib.Components;
 using Metroball.Lib.Settings;
+using Microsoft.Phone.Info;
+using Microsoft.Phone.Notification;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
@@ -24,6 +28,7 @@ namespace Metroball
         private readonly GameScreen _gameScreen;
         private readonly MenuScreen _menuScreen;
         private readonly ResultsScreen _resultsScreen;
+        private HttpNotificationChannel _pushChannel;
 
         public MetroballGame()
         {
@@ -32,8 +37,15 @@ namespace Metroball
 
             AdGameComponent.Initialize(this, SettingsManager.ApplicationId);
 
-            GameData = new GameData { UserId = SettingsManager.UserId, Session = new Session() };
+            GameData = new GameData
+                           {
+                               UserId = SettingsManager.UserId,
+                               Session = new Session(),
+                               Results = {Name = SettingsManager.Name}
+                           };
 
+            ConnectLiveTileService(GameData.UserId);
+            
             _flashMessage = new FlashMessage(this) { DrawOrder = 1 };
 
             _menuScreen = new MenuScreen(this)
@@ -75,6 +87,43 @@ namespace Metroball
 
             TargetElapsedTime = TimeSpan.FromTicks(333333);
             InactiveSleepTime = TimeSpan.FromSeconds(0);
+        }
+
+        private void ConnectLiveTileService(string channelName)
+        {
+            _pushChannel = HttpNotificationChannel.Find(channelName);
+
+            if (_pushChannel != null)
+            {
+                _pushChannel.Close();
+            }
+
+            _pushChannel = new HttpNotificationChannel(channelName, "metroball.hax.io");
+            _pushChannel.ChannelUriUpdated += PushChannelUriUpdated;
+            _pushChannel.ErrorOccurred += PushChannelErrorOccurred;
+            _pushChannel.Open();
+            _pushChannel.BindToShellTile();
+
+            if (!_pushChannel.IsShellTileBound)
+            {
+                _pushChannel.BindToShellTile();
+
+                var allowedDomains = new Collection<Uri> { new Uri("https://hax.io") };
+                _pushChannel.BindToShellTile(allowedDomains);
+                _pushChannel.HttpNotificationReceived += NotificationReceived;
+            }
+        }
+
+        private void NotificationReceived(object sender, HttpNotificationEventArgs httpNotificationEventArgs)
+        {   
+        }
+
+        private void PushChannelErrorOccurred(object sender, NotificationChannelErrorEventArgs e)
+        {
+        }
+
+        private void PushChannelUriUpdated(object sender, NotificationChannelUriEventArgs e)
+        {
         }
 
         protected override void Update(GameTime gameTime)
@@ -191,9 +240,11 @@ namespace Metroball
                 ShowResults();
                 GetName(
                     (o, args) =>
-                    Service.UpdateGameStatus(GameData.UserId, GameData.Session.SessionId, GameData.Results,
-                                             (sender1, args1) =>
-                                             Service.GetHighScores(UpdateHighScores)));
+                    Service.UpdateGameStatus(GameData.UserId, GameData.Session.SessionId, GameData.Results, delegate(object sender1, EventArgs args1)
+                                                                                                                {
+                                                                                                                    Service.GetHighScores(UpdateHighScores);
+                                                                                                                    Service.GetTopPlayers(UpdateTopPlayers);
+                                                                                                                }));
             }
             else
             {
@@ -202,14 +253,20 @@ namespace Metroball
             }
         }
 
-        private void UpdateHighScores(HighScore[] highScores)
+        private void UpdateTopPlayers(HighScore[] highScores)
         {
-            if (String.IsNullOrEmpty(GameData.Results.Name))
+            var topPlayers = new List<HighScore>(highScores);
+            var currentPlayer = topPlayers.FirstOrDefault(s => s.GameId == GameData.UserId);
+            if (currentPlayer != null)
             {
-                _resultsScreen.HighScores = highScores;
-                return;
+                currentPlayer.Current = true;
             }
 
+            _resultsScreen.TopPlayers = topPlayers;
+        }
+
+        private void UpdateHighScores(HighScore[] highScores)
+        {
             var scoreList = new List<HighScore>(highScores);
             var currentScore = scoreList.FirstOrDefault(s => s.GameId == GameData.Results.GameId);
             if (currentScore != null)
@@ -231,13 +288,13 @@ namespace Metroball
             _resultsScreen.HighScores = scoreList;
         }
 
-        private void GetName(EventHandler successCallback)
+        private void GetName(EventHandler callback)
         {
             if(Guide.IsVisible)
             {
-                if (successCallback != null)
+                if (callback != null)
                 {
-                    successCallback.Invoke(this, new EventArgs());
+                    callback.Invoke(this, new EventArgs());
                 }
 
                 return;
@@ -253,12 +310,9 @@ namespace Metroball
                     SettingsManager.Name = Guide.EndShowKeyboardInput(ar);
                     GameData.Results.Name = SettingsManager.Name;
 
-                    if (!String.IsNullOrEmpty(SettingsManager.Name))
+                    if (callback != null)
                     {
-                        if (successCallback != null)
-                        {
-                            successCallback.Invoke(this, new EventArgs());
-                        }
+                        callback.Invoke(this, new EventArgs());
                     }
                 }, null);
         }

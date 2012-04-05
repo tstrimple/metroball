@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>Sphere</Name>
     <Identity>
-      <SourceFilename>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\metroball\Metroball\MetroballContent\Sphere.fbx</SourceFilename>
+      <SourceFilename>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\MetroballContent\Sphere.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>0.1000001 0 0 0 0 0 -0.100000061 0 0 0.1 0 0 0 0 0 1</Transform>

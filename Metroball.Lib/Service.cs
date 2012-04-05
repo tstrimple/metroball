@@ -13,6 +13,7 @@ namespace Metroball.Lib
 {
     public delegate void RankAvailable(int? rank);
     public delegate void HighScoresAvailable(HighScore[] highScores);
+    public delegate void TopPlayersAvailable(HighScore[] highScores);
 
     public class ServiceRequest
     {
@@ -183,6 +184,39 @@ namespace Metroball.Lib
         }
     }
 
+    public class TopPlayersRequest : ServiceRequest
+    {
+        private readonly TopPlayersAvailable _highScoreCallback;
+
+        public TopPlayersRequest(TopPlayersAvailable callback)
+        {
+            _highScoreCallback = callback;
+        }
+
+        protected override void HandleResponse(string response)
+        {
+            try
+            {
+                var jsonObject = JArray.Parse(response);
+                var highScores = jsonObject.Children().Select(hs =>
+                                                        new HighScore()
+                                                        {
+                                                            GameId = hs["_id"].ToString(),
+                                                            Name = hs["name"].ToString(),
+                                                            Score = hs["highscore"].ToString()
+                                                        }).ToArray();
+                _highScoreCallback.Invoke(highScores);
+                return;
+            }
+            catch (Exception)
+            {
+                _highScoreCallback.Invoke(null);
+                throw;
+            }
+
+        }
+    }
+
     public static class Service
     {
         public const string ServiceUrl = "https://hax.io/mb/";
@@ -274,6 +308,19 @@ namespace Metroball.Lib
             request.SendRequest();
         }
 
+        public static void BindTilePushUri(string userId, string uri)
+        {
+            var data = new Dictionary<string, string>() { { "userId", userId }, {"uri", Convert.ToBase64String(Encoding.UTF8.GetBytes(uri))} };
+            var request = new ServiceRequest()
+            {
+                Data = data,
+                Salt = SecretKey,
+                Url = String.Format("{0}BindTilePushUri/", ServiceUrl)
+            };
+
+            request.SendRequest();
+        }
+
         public static void GetRank(int score, RankAvailable rankCallback)
         {
             var data = new Dictionary<string, string>() {{"score", score.ToString(CultureInfo.InvariantCulture)}};
@@ -298,7 +345,19 @@ namespace Metroball.Lib
             };
 
             request.SendRequest();
+        }
 
+        public static void GetTopPlayers(TopPlayersAvailable topPlayersAvailable)
+        {
+            var data = new Dictionary<string, string>() { { "score", "10" } };
+            var request = new TopPlayersRequest(topPlayersAvailable)
+            {
+                Data = data,
+                Salt = SecretKey,
+                Url = String.Format("{0}GetTopPlayers/", ServiceUrl)
+            };
+
+            request.SendRequest();
         }
     }
 }
