@@ -7,8 +7,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\LogoFont.xnb</Output>
-      <Time>2012-02-11T18:48:30.1714664-08:00</Time>
+      <Output>D:\Code\metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\LogoFont.xnb</Output>
+      <Time>2012-05-06T20:45:59.7925789-07:00</Time>
     </Item>
     <Item>
       <Source>MenuFont.spritefont</Source>
@@ -16,8 +16,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\MenuFont.xnb</Output>
-      <Time>2012-02-02T00:52:32.0043479-08:00</Time>
+      <Output>D:\Code\metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\MenuFont.xnb</Output>
+      <Time>2012-05-06T20:45:59.7925789-07:00</Time>
     </Item>
     <Item>
       <Source>GameFont.spritefont</Source>
@@ -25,8 +25,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\GameFont.xnb</Output>
-      <Time>2012-02-11T20:00:28.3384514-08:00</Time>
+      <Output>D:\Code\metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\GameFont.xnb</Output>
+      <Time>2012-05-06T20:45:59.7915788-07:00</Time>
     </Item>
     <Item>
       <Source>ScoreFont.spritefont</Source>
@@ -34,8 +34,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\ScoreFont.xnb</Output>
-      <Time>2012-02-16T22:54:10.2046663-08:00</Time>
+      <Output>D:\Code\metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\ScoreFont.xnb</Output>
+      <Time>2012-05-06T20:45:59.8005793-07:00</Time>
     </Item>
     <Item>
       <Source>SelectedScoreFont.spritefont</Source>
@@ -43,8 +43,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\SelectedScoreFont.xnb</Output>
-      <Time>2012-02-16T22:54:30.218811-08:00</Time>
+      <Output>D:\Code\metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\SelectedScoreFont.xnb</Output>
+      <Time>2012-05-06T20:45:59.8015794-07:00</Time>
     </Item>
     <Item>
       <Source>Wall.wav</Source>
@@ -52,8 +52,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Wall.xnb</Output>
-      <Time>2011-12-18T19:50:47.9970491-08:00</Time>
+      <Output>D:\Code\metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Wall.xnb</Output>
+      <Time>2012-05-06T20:45:59.8045796-07:00</Time>
     </Item>
     <Item>
       <Source>Paddle.wav</Source>
@@ -61,8 +61,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Paddle.xnb</Output>
-      <Time>2011-12-18T19:50:47.995049-08:00</Time>
+      <Output>D:\Code\metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Paddle.xnb</Output>
+      <Time>2012-05-06T20:45:59.7995793-07:00</Time>
     </Item>
     <Item>
       <Source>Miss.wav</Source>
@@ -70,8 +70,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Miss.xnb</Output>
-      <Time>2011-12-18T19:50:47.9890487-08:00</Time>
+      <Output>D:\Code\metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Miss.xnb</Output>
+      <Time>2012-05-06T20:45:59.7985792-07:00</Time>
     </Item>
     <Item>
       <Source>Sphere.fbx</Source>
@@ -79,11 +79,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Sphere.xnb</Output>
-      <Time>2011-12-10T16:39:16.4940587-08:00</Time>
+      <Output>D:\Code\metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Sphere.xnb</Output>
+      <Time>2012-05-06T20:45:59.8035795-07:00</Time>
       <Dependency>
-        <Key>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\Sphere_0.xml</Key>
-        <Value>2012-04-03T23:33:41.0732986-07:00</Value>
+        <Key>D:\Code\metroball\Metroball\Metroball\obj\Windows Phone\Release\Sphere_0.xml</Key>
+        <Value>2012-05-06T20:58:02.2409005-07:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -92,26 +92,26 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Cube.xnb</Output>
-      <Time>2011-12-10T00:38:39.2073395-08:00</Time>
+      <Output>D:\Code\metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\Cube.xnb</Output>
+      <Time>2012-05-06T20:45:59.7905787-07:00</Time>
       <Dependency>
-        <Key>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\Cube_0.xml</Key>
-        <Value>2012-04-03T23:33:41.1473028-07:00</Value>
+        <Key>D:\Code\metroball\Metroball\Metroball\obj\Windows Phone\Release\Cube_0.xml</Key>
+        <Value>2012-05-06T20:58:02.3759083-07:00</Value>
       </Dependency>
     </Item>
     <Item>
       <Source>Sphere.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\Sphere_0.xml</Output>
-      <Time>2011-12-10T16:39:16.4940587-08:00</Time>
+      <Output>D:\Code\metroball\Metroball\Metroball\obj\Windows Phone\Release\Sphere_0.xml</Output>
+      <Time>2012-05-06T20:45:59.8035795-07:00</Time>
     </Item>
     <Item>
       <Source>Cube.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\Cube_0.xml</Output>
-      <Time>2011-12-10T00:38:39.2073395-08:00</Time>
+      <Output>D:\Code\metroball\Metroball\Metroball\obj\Windows Phone\Release\Cube_0.xml</Output>
+      <Time>2012-05-06T20:45:59.7905787-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -120,10 +120,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Release</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\MetroballContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\obj\Windows Phone\Release\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Timothy Strimple\Documents\Visual Studio 2010\Projects\EvoSys\Metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\</OutputDirectory>
+      <RootDirectory>D:\Code\metroball\Metroball\MetroballContent\</RootDirectory>
+      <LoggerRootDirectory>D:\Code\metroball\Metroball\Metroball\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\Code\metroball\Metroball\Metroball\obj\Windows Phone\Release\</IntermediateDirectory>
+      <OutputDirectory>D:\Code\metroball\Metroball\Metroball\bin\Windows Phone\Release\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

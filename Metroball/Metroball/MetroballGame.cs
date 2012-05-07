@@ -255,6 +255,11 @@ namespace Metroball
 
         private void UpdateTopPlayers(HighScore[] highScores)
         {
+            if(highScores == null || highScores.Length == 0)
+            {
+                return;
+            }
+
             var topPlayers = new List<HighScore>(highScores);
             var currentPlayer = topPlayers.FirstOrDefault(s => s.GameId == GameData.UserId);
             if (currentPlayer != null)

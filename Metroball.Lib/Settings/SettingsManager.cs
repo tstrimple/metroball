@@ -61,17 +61,17 @@ namespace Metroball.Lib.Settings
 
         public static string ApplicationId
         {
-            get { return "280959f5-c67a-4b4f-a882-3baea4edc0d2"; }
+            get { return "00000000-0000-0000-0000-000000000000"; }
         }
 
         public static string LargeAdId
         {
-            get { return "81996"; }
+            get { return "00000"; }
         }
 
         public static string SmallAdId
         {
-            get { return "81995"; }
+            get { return "00000"; }
         }
     }
 }
